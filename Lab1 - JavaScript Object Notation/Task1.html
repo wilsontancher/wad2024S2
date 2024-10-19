@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <script>
+        //1.1
+        let toy1 = { "color": "red", "size": 5, "soft": true };
+        console.log(toy1);
+        console.log(toy1["color"]);
+        console.log(toy1.color);
+
+        let toy2 = {};
+        toy2.name = "Cardboard Box";
+        toy2.tags = ["imagination", "recyclable", "cats"];
+        toy2.size = {
+            "units": "inches",
+            "width": 10,
+            "height": 5,
+            "depth": 3
+        };
+        toy2.quanity = 2;
+        console.log(toy2.tags[1]);
+        console.log(toy2.size.units);
+
+        let toy3 = toy1;
+
+        console.log(toy1.color);
+        console.log(toy3.color);
+        toy3.color = "blue";
+        console.log(toy3.color);
+        console.log(toy1.color);
+
+        //1.2
+        let ward = {
+            "beds": [
+                {
+                    "number": 1,
+                    "status": "available"
+                },
+                {
+                    "number": 2,
+                    "status": "occupied"
+                }
+            ],
+            "location": "B2",
+            "number": "34",
+            "status": "available"
+        };
+    </script>
+</body>
+
+</html>
