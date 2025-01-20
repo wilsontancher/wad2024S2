@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "de30db28-06f1-4c6f-935b-3e297e24c14e",
+		"name": "Timetabling API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24688536"
+	},
+	"item": [
+		{
+			"name": "Add timetable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "day",
+							"value": "Tuesday",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "1600",
+							"type": "text"
+						},
+						{
+							"key": "end",
+							"value": "1800",
+							"type": "text"
+						},
+						{
+							"key": "module",
+							"value": "5e8452b28479d84e10291b89",
+							"type": "text"
+						},
+						{
+							"key": "tutor",
+							"value": "5e84565a8479d84e10291b8f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/timetables?token=a717e8ddb080f890ae0f872870282680",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"timetables"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "a717e8ddb080f890ae0f872870282680"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all timetables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/timetables",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"timetables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get timetable for tutor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/timetables/tutor/5e84565a8479d84e10291b8f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"timetables",
+						"tutor",
+						"5e84565a8479d84e10291b8f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update timetable",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "day",
+							"value": "Monday",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "1600",
+							"type": "text"
+						},
+						{
+							"key": "end",
+							"value": "1800",
+							"type": "text"
+						},
+						{
+							"key": "module",
+							"value": "5e8452b28479d84e10291b89",
+							"type": "text"
+						},
+						{
+							"key": "tutor",
+							"value": "5e84565a8479d84e10291b8f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/timetables/63ad15ae50947fd6afd955c5?token=f10a29c7657d0e5042141f02324f7e80",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"timetables",
+						"63ad15ae50947fd6afd955c5"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "f10a29c7657d0e5042141f02324f7e80"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user1pw",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/user/logout?token=53a16b566821acc39deb8c6f99b93ce0",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "53a16b566821acc39deb8c6f99b93ce0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

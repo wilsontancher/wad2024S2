@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "5e84527b008b224e10e699c7"
+  },
+  "code": "EG1234",
+  "name": "Programming Fundamentals"
+},{
+  "_id": {
+    "$oid": "5e8452b28479d84e10291b89"
+  },
+  "code": "EG2238",
+  "name": "Advanced Calculus"
+},{
+  "_id": {
+    "$oid": "5e8452de8479d84e10291b8a"
+  },
+  "code": "EG3255",
+  "name": "Database Administration"
+},{
+  "_id": {
+    "$oid": "5e8452f28479d84e10291b8b"
+  },
+  "code": "EG2213",
+  "name": "Web Development"
+},{
+  "_id": {
+    "$oid": "5e8453328479d84e10291b8c"
+  },
+  "code": "EG1295",
+  "name": "UX Design"
+}]

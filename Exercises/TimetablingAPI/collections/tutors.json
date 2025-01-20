@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "5e845543008b224e10e699c9"
+  },
+  "name": "Jason Tan",
+  "office": "S522"
+},{
+  "_id": {
+    "$oid": "5e8455b58479d84e10291b8d"
+  },
+  "name": "Agnes Lim",
+  "office": "S523"
+},{
+  "_id": {
+    "$oid": "5e8455c68479d84e10291b8e"
+  },
+  "name": "Joanne Wong",
+  "office": "S510"
+},{
+  "_id": {
+    "$oid": "5e84565a8479d84e10291b8f"
+  },
+  "name": "Nicholas Ang",
+  "office": "S512"
+}]
